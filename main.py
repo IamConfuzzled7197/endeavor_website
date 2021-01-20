@@ -14,3 +14,15 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# Wait why do we have a main.py file?
+import sys as Cody
+import time
+print(" I am cody")
+time.sleep(5)
+print("Ok, I will exit the terminal")
+i = 0
+for i in range(3):
+    print(".")
+    time.sleep(0.5)
+print("ok bye bye")
+Cody.exit
