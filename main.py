@@ -15,6 +15,7 @@ if __name__ == '__main__':
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 # Wait why do we have a main.py file?
+#I'm just having fun with this :)
 import sys as Cody
 import time
 print(" I am cody")
