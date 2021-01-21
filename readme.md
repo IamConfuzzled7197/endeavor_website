@@ -1,3 +1,4 @@
-# Read me
+# Endeavor Arcade
 
-<h1 align = "center">The Endeavor Arcade</h1>
+This is a Video Game Arcade made by a team of dedicated volunteers.
+
