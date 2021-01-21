@@ -117,8 +117,8 @@ class Board:
 sys.setrecursionlimit(999999)
 WIDTH = HEIGHT = 600
 pygame.init()
-size = 9
-difficulty = -10
+size = 20
+difficulty = 6
 num_bombs = (size ** 2) // (12 - difficulty)
 sq_size = WIDTH // size
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -126,10 +126,13 @@ board = Board(size, num_bombs)
 WHITE = (255, 255, 255)
 GREY = (128, 128, 128)
 BLACK = (0, 0, 0)
+marked = set()
+game_over = False
+reveal = False
 
 
 def get_image(path, size=(sq_size, sq_size)):
-    return pygame.transform.scale(pygame.image.load(os.path.join(path)), (size[0], size[1]))
+    return pygame.transform.scale(pygame.image.load(os.path.join("minesweeper", path)), (size[0], size[1]))
 
 
 images = dict()
