@@ -42,7 +42,7 @@
     color: #ffffff;
     text-align: center;
   }
-  /* Ok, so this is for the contact form*/
+
   
   .container2 {
     border-radius: 5px;
@@ -51,9 +51,4 @@
     text-align: left;
     height: 550px;
     width: 50%;
-  }
-  .picture-on-right{
-    height: 550px;
-    right: 300px;
-    text-align: right;
   }
