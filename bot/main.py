@@ -63,9 +63,11 @@ def get_commands():
 get_commands()
 
 def handle_commands():
-    with open('commands.txt', 'a'):
+    with open('commands.txt', 'w'):
+        print("THIS FUNCTION HAS RAN")
         for key, value in commands.items():
             file.write(f'cmd {key} {value}\n')
+            print('Command added')
 
         for key, value in random_commands.items():
             file.write(f'rand {key} {value}\n')
@@ -137,4 +139,4 @@ async def on_message(message):
         commands.clear()
         random_commands.clear()
         await send_message(message, "All Commands Cleared!")
-client.run('Nzk5NjczODI1NjM2OTA5MTI3.YAHASQ.R5AFr1afBKAmmVso2KnIpamEK0M')
+client.run('Nzk5NjczODI1NjM2OTA5MTI3.YAHASQ.IhgYKlwKCBRA3JmKlJFqZ9OfRSU')
