@@ -74,7 +74,7 @@ def handle_commands():
 @client.event
 async def on_member_join(member):
     for channel in meber.guild.channels:
-        if str(chaneel) == 'welcome':
+        if str(channel) == 'welcome':
             await channel.send_message(f'Welcome to the server {member.mention}')
 
 
@@ -90,7 +90,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.author == "destinie#7704":
+    if message.author == "destinie#7704" or message.author == "FishieFish#3010":
         await send_message(message, "Invalid User")
         return
 
@@ -135,4 +135,4 @@ async def on_message(message):
         file.truncate()
         file.close()
         await send_message(message, "All Commands Cleared!")
-client.run('Nzk5NjczODI1NjM2OTA5MTI3.YAHASQ.IpNjxdW_n6oCFAEoQJH_10tGGpY')
+client.run('Nzk5NjczODI1NjM2OTA5MTI3.YAHASQ.bRQ25rQLbE6jnqIuWiiuIcTHgzk')

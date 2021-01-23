@@ -139,7 +139,7 @@ images = dict()
 images['*'] = get_image('Minesweeper_mine.png')
 images['uncovered'] = get_image('Minesweeper_uncovered.png')
 images['flag'] = get_image('Minesweeper_flag.png')
-for i in range(9):
+for i in range(9):  
     images[i] = get_image(f'Minesweeper_{i}.png')
 
 def start_game():
