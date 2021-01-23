@@ -14,7 +14,7 @@ async def send_message(c, message):
 def add_command(command_dict, trigger, message):
     try:
         new_command = message
-        command = new_command[len(trigger) + 1:]
+        command = new_command[len(trigger):]
         command = command.split(';')
         key, value = command
         command_dict[key] = value
@@ -134,5 +134,7 @@ async def on_message(message):
         file = open('commands.txt', 'w')
         file.truncate()
         file.close()
+        commands.clear()
+        random_commands.clear()
         await send_message(message, "All Commands Cleared!")
-client.run('Nzk5NjczODI1NjM2OTA5MTI3.YAHASQ.bRQ25rQLbE6jnqIuWiiuIcTHgzk')
+client.run('Nzk5NjczODI1NjM2OTA5MTI3.YAHASQ.R5AFr1afBKAmmVso2KnIpamEK0M')
